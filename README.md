@@ -4,7 +4,7 @@ Image captioning is a new technology that combines RNN text generation with the 
 
 In this repository, we will use LSTM and CNN to create a basic image captioning system.
 
-we will work on [Flicker30k image dataset](https://www.kaggle.com/hsankesara/flickr-image-dataset) from Kaggle. Each image has five captions. This data also contains a csv file that consists of three columns, first column is the names of the images, second column is the caption number and third column is the caption.
+we will work on [Flicker30k image dataset](https://www.kaggle.com/hsankesara/flickr-image-dataset) from Kaggle. Each image has five captions. This data also contains a csv file that consists of three columns, the first column is the names of the images, the second column is the caption number and the third column is the caption.
 
 We will use the MobileNet model that has been pre-trained for classifying images. But instead of using the last classification layer, we will redirect the output of the previous layer. This gives us a vector with 1024 elements that summarizes the image-contents. This part is called an encoder.
 
